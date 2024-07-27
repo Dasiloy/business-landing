@@ -14,15 +14,10 @@ const Footer = ({ mode }) => {
             {/** LOGO HERE */}
             <div className='flex flex-row items-center gap-3'>
               <img
-                src={mode === "light" ? "/logo.svg" : "/logo-dark.svg"}
+                src={"/logo.svg"}
                 alt='Logo'
-                className='h-[54px] w-[54px] object-contain'
+                className='w-[140px] h-[54px] md:w-[200px] object-contain'
               />
-              <Text
-                variant='h4'
-                className='text-mainText-light dark:text-mainText-dark'>
-                ourCompliance
-              </Text>
             </div>
             {/** LOCATION HERE */}
             <div className='mt-[30px] flex flex-row gap-3'>

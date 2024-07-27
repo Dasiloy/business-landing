@@ -14,15 +14,10 @@ const Header = ({ themeToggler, mode }) => {
           {/** LOGO */}
           <div className='flex flex-row items-center gap-3'>
             <img
-              src={mode === "light" ? "/logo.svg" : "/logo-dark.svg"}
+              src={"/logo.svg"}
               alt='Logo'
-              className='h-[40px] w-[40px] md:h-[54px] md:w-[54px] object-contain'
+              className='w-[140px] h-[54px] md:w-[200px] object-contain'
             />
-            <Text
-              variant=''
-              className='text-mainText-dark text-base md:text-2xl'>
-              ourCompliance
-            </Text>
           </div>
           {/** RIGHT */}
           <div className='flex flex-row items-center gap-8 justify-between'>

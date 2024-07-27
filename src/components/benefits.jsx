@@ -66,40 +66,39 @@ const benefits = [
     summary:
       "Enjoy flexibility without long-term commitments, allowing you to adapt as your business needs change.",
   },
-  // fill up to 12
   {
     image_url: "/benefits/benefit2.png",
-    title: "User-Friendly Interface",
+    title: "Up and Running in Minutes",
     summary:
-      "Our intuitive platform is easy to navigate, ensuring a seamless user experience for all users.",
+      "Quick and easy setup to get you started without delay, so you can focus on what matters most.",
   },
   {
     image_url: "/benefits/benefit3.png",
-    title: "Automated Compliance Checks",
+    title: "Australian Owned and Operated",
     summary:
-      "Automate compliance checks to ensure your workforce is up-to-date with the latest regulations.",
+      "Support a local business with deep industry expertise and a commitment to quality.",
   },
   {
     image_url: "/benefits/benefit4.png",
-    title: "Customizable Reporting",
+    title: "Fully Auditable and Secure",
     summary:
-      "Generate custom reports to track compliance progress and identify areas for improvement.",
+      "Ensure your data is protected and compliance processes are transparent, with robust security measures in place.",
   },
   {
     image_url: "/benefits/benefit5.png",
-    title: "24/7 Customer Support",
+    title: "Completely Free Version",
     summary:
-      "Our dedicated support team is available around the clock to assist with any queries or issues.",
+      "Access essential features at no cost, making compliance management accessible to businesses of all sizes.",
   },
   {
     image_url: "/benefits/benefit6.png",
-    title: "Secure Data Storage",
+    title: "Dedicated Installations",
     summary:
-      "Protect sensitive data with secure cloud storage, ensuring compliance with data protection regulations.",
+      "Get a tailored solution with your own dedicated setup if needed, ensuring optimal performance and customization.",
   },
   {
     image_url: "/benefits/benefit7.png",
-    title: "Scalable Solution",
+    title: "Branded Versions",
     summary:
       "Customize the platform to reflect your brand identity, enhancing your company's professional image.",
   },
