@@ -24,7 +24,7 @@ const Prices = () => {
         </Text>
 
         {/** PRICES CONTAINER */}
-        <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-7'>
+        <div className='grid grid-cols-1 gap-10 mt-20 lg:grid-cols-2 xl:grid-cols-3'>
           {prices.map((p) => (
             <PlanCard key={p.name} plan={p} />
           ))}
@@ -39,30 +39,20 @@ export default Prices;
 const prices = [
   {
     name: "Basic Plan",
-    price: "$29",
+    price: "Free",
     summary:
-      "Essential tools for compliance management, including background checks, reminders, and basic reporting. Ideal for small businesses.",
-    permissions: [
-      "Employee Background Checks",
-      "Compliance Reminders",
-      "Basic Reporting",
-      "Email Support",
-    ],
+      "Essential tools for compliance management, including background checks, remimders, and basic reporting. Ideal for small businesses.",
+    permissions: ["⁠50 assets", "Unlimited compliance records"],
   },
   {
     name: "Professional Plan",
-    price: "$59",
+    price: "$1 per asset",
     summary:
       "Advanced features like asset management, detailed reporting, and automated renewals. Perfect for growing businesses.",
     permissions: [
-      "Employee Background Checks",
-      "Compliance Reminders",
-      "Basic Reporting",
-      "Email Support",
-      "Asset Management",
-      "Advanced Reporting",
-      "Automated Renewal Triggers",
-      "Priority Email Support",
+      "⁠50 assets",
+      "Unlimited assets",
+      "Unlimited compliance records",
     ],
   },
   {
@@ -71,19 +61,11 @@ const prices = [
     summary:
       "Comprehensive package with dedicated support, custom integrations, and API access. Designed for large organizations. Contact us for pricing.",
     permissions: [
-      "Employee Background Checks",
-      "Compliance Reminders",
-      "Basic Reporting",
-      "Email Support",
-      "Asset Management",
-      "Advanced Reporting",
-      "Automated Renewal Triggers",
-      "Priority Email Support",
-      "Dedicated Account Manager",
-      "Custom Integrations",
-      "API Access",
-      "On-Demand Audit Reports",
-      "Phone Support",
+      "⁠50 assets",
+      "Unlimited assets",
+      "Unlimited compliance records",
+      "⁠Automated integrations with third-party compliance providers",
+      "⁠SSO integrations with your organization",
     ],
   },
 ];

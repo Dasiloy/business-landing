@@ -3,11 +3,11 @@
 import React from "react";
 import Text from "../atoms/text";
 
-const Compliance = ({ mode }) => {
+const Compliance = ({ mode, openModal }) => {
   const [index, setIndex] = React.useState(0);
   return (
-    <div className='bg-bckg-light dark:bg-bckg-dark py-24 pb-32'>
-      <div className='container mx-auto max-w-screen-xl'>
+    <div className='py-24 pb-32 bg-bckg-light dark:bg-bckg-dark'>
+      <div className='container max-w-screen-xl mx-auto'>
         <Text
           Component='h2'
           variant='h2'
@@ -49,14 +49,16 @@ const Compliance = ({ mode }) => {
               </Text>
               <Text
                 variant='p'
-                className='text-Gray_100-light dark:text-Gray_100-dark mt-6'>
+                className='mt-6 text-Gray_100-light dark:text-Gray_100-dark'>
                 Never miss a compliance requirement again with automatic
                 reminders to HR and the employee when an item is due to renew -
                 Police Checks, Visa Checks, RSA, IT certifications if it has an
                 expiry / renewal date we can manage it.
               </Text>
 
-              <button className='mt-14 border-2 px-6 py-4 rounded-lg text-primary-light font-semibold dark:text-primary-dark border-primary-light dark:border-primary-dark'>
+              <button
+                onClick={openModal}
+                className='px-6 py-4 font-semibold border-2 rounded-lg mt-14 text-primary-light dark:text-primary-dark border-primary-light dark:border-primary-dark hover:text-secondary-dark hover:border-secondary-dark'>
                 Learn More
               </button>
             </div>

@@ -5,7 +5,7 @@ import Text from "../atoms/text";
 import { FiMoon } from "react-icons/fi";
 import { TiWeatherSunny } from "react-icons/ti";
 
-const Header = ({ themeToggler, mode }) => {
+const Header = ({ themeToggler, mode, openModal }) => {
   return (
     <div className='hero'>
       <div className='container'>
@@ -20,11 +20,15 @@ const Header = ({ themeToggler, mode }) => {
             />
           </div>
           {/** RIGHT */}
-          <div className='flex flex-row items-center gap-8 justify-between'>
-            <button className='border-2 px-6 py-4 hidden md:flex rounded-lg text-white-light border-primary-light dark:border-primary-dark font-semibold dark:text-white-dark bg-primary-light dark:bg-primary-dark'>
+          <div className='flex flex-row items-center justify-between gap-8'>
+            <button
+              onClick={openModal}
+              className='hidden px-6 py-4 font-semibold border-2 rounded-lg md:flex text-white-light border-primary-light dark:border-primary-dark dark:text-white-dark bg-primary-light dark:bg-primary-dark hover:bg-secondary-dark'>
               Request Demo
             </button>
-            <button className='border-2 px-6 py-4 bg-[#030C07] rounded-lg hidden md:flex text-white-light font-semibold  border-primary-light dark:border-primary-dark'>
+            <button
+              onClick={openModal}
+              className='border-2 px-6 py-4 bg-[#030C07] rounded-lg hidden md:flex text-white-light font-semibold  border-primary-light dark:border-primary-dark hover:bg-transparent'>
               Request Early Access
             </button>
             {/** Theme Switcher */}
@@ -64,16 +68,20 @@ const Header = ({ themeToggler, mode }) => {
               <span className='text-primary-light'>Compliance Software</span>{" "}
               made Simple!
             </Text>
-            <Text variant='p' className='text-Gray_100-dark mt-6'>
+            <Text variant='p' className='mt-6 text-Gray_100-dark'>
               Our software simplifies background checks, tracks compliance, and
               keeps your workforce certified with an intuitive platform.
               Experience easy, automated compliance management today!
             </Text>
             <div className='flex flex-row items-center gap-8'>
-              <button className='mt-14 border-2 px-6 py-4 rounded-lg text-white-light border-primary-light dark:border-primary-dark font-semibold dark:text-white-dark bg-primary-light dark:bg-primary-dark'>
+              <button
+                onClick={openModal}
+                className='px-6 py-4 font-semibold border-2 rounded-lg mt-14 text-white-light border-primary-light dark:border-primary-dark dark:text-white-dark bg-primary-light dark:bg-primary-dark hover:bg-secondary-dark'>
                 Get Started
               </button>
-              <button className='mt-14 border-2 px-6 py-4 bg-[#030C07] rounded-lg flex text-white-light font-semibold  border-primary-light dark:border-primary-dark'>
+              <button
+                onClick={openModal}
+                className='mt-14 border-2 px-6 py-4 bg-[#030C07] rounded-lg flex text-white-light font-semibold  border-primary-light dark:border-primary-dark hover:bg-transparent'>
                 Learn More
               </button>
             </div>
@@ -82,7 +90,7 @@ const Header = ({ themeToggler, mode }) => {
           <img
             src={mode === "light" ? "LT1.svg" : "DT1.svg"}
             alt='Image'
-            className='lg:w-2/5 2xl:w-1/2 h-auto'
+            className='h-auto lg:w-2/5 2xl:w-1/2'
           />
         </div>
       </div>

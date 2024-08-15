@@ -5,9 +5,9 @@ import Text from "../atoms/text";
 
 /* eslint-disable react/prop-types */
 
-const Benefits = () => {
+const Benefits = ({ openModal }) => {
   return (
-    <div className='bg-bckg-light dark:bg-bckg-dark py-24'>
+    <div className='py-24 bg-bckg-light dark:bg-bckg-dark'>
       <div className='container mx-auto'>
         <Text
           Component='h2'
@@ -36,7 +36,7 @@ const Benefits = () => {
         </Text>
 
         {/** CARDS */}
-        <div className='gap-6 mt-24 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mb-20 xl:mb-28'>
+        <div className='grid grid-cols-1 gap-6 mt-24 mb-20 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 xl:mb-28'>
           {benefits.map((b) => (
             <Card
               key={b.title}
@@ -48,7 +48,9 @@ const Benefits = () => {
         </div>
 
         <div className='flex w-full mb-16'>
-          <button className='mt-14 border-2 px-6 py-4 rounded-lg text-white-light border-primary-light dark:border-primary-dark font-semibold dark:text-white-dark bg-primary-light dark:bg-primary-dark mx-auto'>
+          <button
+            onClick={openModal}
+            className='px-6 py-4 mx-auto font-semibold border-2 rounded-lg mt-14 text-white-light border-primary-light dark:border-primary-dark dark:text-white-dark bg-primary-light dark:bg-primary-dark hover:bg-secondary-dark'>
             Get Started Now
           </button>
         </div>
